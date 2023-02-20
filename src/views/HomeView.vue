@@ -83,7 +83,7 @@ export default {
             <!-- av någon anledning funkar inte images, trots att det är rätt -->
             <div class="card-body">
               <h5 class="card-title">{{ movie.l }}</h5>
-              <p class="card-text">{{ movie.l }}</p>
+              <p class="card-text">Ranking: {{ movie.rank }}</p>
               <p class="card-text">Actors: {{ movie.s }}</p>
               <p class="card-text">Year: {{ movie.y }}</p>
             </div>
