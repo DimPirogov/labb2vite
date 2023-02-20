@@ -6,13 +6,6 @@ export default {
     this.apiCall();
   },
   methods: {
-    onSubmit(event, search) {
-      if (event) {
-        this.searchKey = search;
-        this.apiCall();
-        event.preventDefault();
-      }
-    },
     searchOn(event) {
       if (event) {
         this.searchKey = this.searchOnpage;
@@ -50,7 +43,7 @@ export default {
       searchOnpage: "",
       searchKey: "",
       loading: false,
-      movies: [], // response from API call will be stored here.
+      movies: [], // sparas svar här
     };
   },
 };
@@ -85,7 +78,7 @@ export default {
     <div v-else>
       <div class="row">
         <div class="col-lg-4" v-for="movie in movies" :key="movie.id">
-          <div class="card mb-1" style="width: 18rem">
+          <div class="card mb-1" style="width: 16rem">
             <!-- <img :src="movie.i.imageUrl" class="card-img-top" :alt="movie.l" /> -->
             <!-- av någon anledning funkar inte images, trots att det är rätt -->
             <div class="card-body">
