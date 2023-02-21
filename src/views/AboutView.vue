@@ -4,8 +4,6 @@ import InputField from "../components/InputField.vue";
 
 <template>
   <div class="container">
-    <InputField />
+    <InputField testName=" 'This is props test' " />
   </div>
 </template>
-
-<style></style>

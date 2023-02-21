@@ -6,6 +6,7 @@ export default {
       eMail: "",
       state: false,
       message: "Tell us what you think",
+      stringName: this.testName,
     };
   },
   methods: {
@@ -17,6 +18,7 @@ export default {
       }
     },
   },
+  props: ["testName"],
 };
 </script>
 <template>
@@ -34,7 +36,7 @@ export default {
       </div>
       <div v-if="!state">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label for="exampleInputEmail1">Email address {{ stringName }}</label>
           <input
             v-model="eMail"
             type="email"
